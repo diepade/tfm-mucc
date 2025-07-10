@@ -15,19 +15,21 @@ Se plantea un enfoque que combina el procesamiento del software Presidio con mod
 - Proponer una arquitectura eficiente y usable para la integración de detección y anonimización dentro de pipelines de generación.
 
 ## 🗂 Estructura del repositorio
+<code>
+tfm-mucc/
 ├── One Template/ # Archivos para las pruebas con un template
-│ ├── One_Template.ipynb # Modelo de pruebas con un único template
-│ ├── normalize_single_template.ipynb # Código para normalizar las salidas del LLM
-│ └── Check_Outputs.ipynb # Código para verificar el rendimiento del LLM
+│   ├── One_Template.ipynb # Modelo de pruebas con un único template
+│   ├── normalize_single_template.ipynb # Código para normalizar las salidas del LLM
+│   └── Check_Outputs.ipynb # Código para verificar el rendimiento del LLM
 ├── Multiple Templates/ # Sistema híbrido de detección
-│ ├── Multiple_Templates.ipynb # Notebook del modelo híbrido de detección de PII
-│ ├── normalize_multi_template.ipynb # Código para normalizar las salidas del LLM
-│ └── Check_Outputs-Multiple.ipynb # Código para verificar el rendimiento del LLM
+│   ├── Multiple_Templates.ipynb # Notebook del modelo híbrido de detección de PII
+│   ├── normalize_multi_template.ipynb # Código para normalizar las salidas del LLM
+│   └── Check_Outputs-Multiple.ipynb # Código para verificar el rendimiento del LLM
 ├── SLURM/ # Código para el despliegue del sistema en SLURM
-│ ├── myscript_seg.py # Código Python del modelo híbrido para despliegue
-│ └── vLLM_2.job # Script SLURM para el despliegue en HPC
+│   ├── myscript_seg.py # Código Python del modelo híbrido para despliegue
+│   └── vLLM_2.job # Script SLURM para el despliegue en HPC
 └── README.md # Este archivo
-
+</code>
 ## 📝 Requisitos
 
 Para utilizar parcial o totalmente estos códigos, se requiere:
